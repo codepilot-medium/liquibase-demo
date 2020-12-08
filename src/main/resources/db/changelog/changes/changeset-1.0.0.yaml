@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1.0.0-001"
+      author: "Codepilot"
+      changes:
+        - createTable:
+            tableName: "EMPLOYEE"
+            columns:
+              - column:
+                  name: "ID"
+                  type: "BIGINT"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: "FIRST_NAME"
+                  type: "VARCHAR2(20)"
+                  constraints:
+                    nullable: false
+              - column:
+                  name: "LAST_NAME"
+                  type: "VARCHAR2(20)"
+                  constraints:
+                    nullable: false
+              - column:
+                  name: "ROLE"
+                  type: "VARCHAR2(20)"
+                  constraints:
+                    nullable: false
+              - column:
+                  name: "ADDRESS"
+                  type: "VARCHAR2(100)"
+              - column:
+                  name: "PHONE_NUMBER"
+                  type: "VARCHAR2(20)"
