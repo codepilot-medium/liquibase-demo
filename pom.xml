@@ -68,7 +68,7 @@
                     <url>jdbc:h2:tcp://localhost:9092/mem:testdb</url>
                     <username>sa</username>
                     <password>password</password>
-                    <changeLogFile>${project.basedir}/src/main/resources/db/changelog/db.changelog-master.yaml</changeLogFile>
+                    <changeLogFile>src/main/resources/db/changelog/db.changelog-master.yaml</changeLogFile>
                     <outputChangeLogFile>${project.basedir}/src/main/resources/db/changelog/db.changelog-init.yaml</outputChangeLogFile>
                     <diffChangeLogFile>${project.basedir}/src/main/resources/db/changelog/db.changelog-diff.yaml</diffChangeLogFile>
                     <migrationSqlOutputFile>${project.basedir}/src/main/resources/db/changelog/migration.sql</migrationSqlOutputFile>
